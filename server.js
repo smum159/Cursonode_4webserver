@@ -57,6 +57,12 @@ app.get ('/bad', (req,res)=>{
     });
 })
 
+app.get ('/proyects', (req,res)=>{
+    res.render('proyects.hbs',{
+        pageTitle: 'Prollekx Peich'
+    });
+});
+
 app.listen(port, () => {
     console.log(`ATENCION: El servidor listo en el puerto ${port} :)`);
     
